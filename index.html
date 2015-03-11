@@ -1,0 +1,212 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>首页</title>
+	<script type="text/javascript" src="./js/jquery-2.1.3.js"></script>
+	<style type="text/css">
+		* {margin:0; padding: 0; font-size: 12px;}
+		a {text-decoration: none; color: #333;}
+		.headerBackground {background-color: rgb(235, 235, 235); height:400px;}
+		.pageContent {width:900px; position: absolute; top:24px; left:50%; margin-left:-450px;}
+
+		.header .top {height:34px; line-height: 34px; width:115px; padding-left: 5px; float:right; background-color:#F5F6FB;}
+		.header .top a {text-decoration: none; color: #333;}
+		.top a:hover {color: orange;}
+		.header .logo {height:126px; width:900px; background-color: white; float:right;}
+		.logo .logoImage {margin: 38px 0 0 10px; float: left;}
+		.logo .contactImage {float: right;}
+
+		.nav {height:44px; margin-top: 10px; background-color: white;}
+		.nav li {float: left; text-align: center; display: block;margin-right: 4px; margin-left: 4px;}
+		.nav li.selectedLi {background:url('./images/bg2.png') no-repeat 2px -1px;}
+		.selectedLi a {color:white;}
+
+		.nav li a {height:44px; line-height: 44px; display: inline-block; width:120px;}
+
+		.bannerImage {height:330px; background:url('./images/flash.jpg');}
+
+		.searchBar {height:32px; background-color: white; padding: 5px 0;}
+
+		.searchBar .search {height: 28px; width: 255px; border:solid 1px rgb(62, 128, 184); margin: 2px 0 0 8px; float: left; color: #BABABA; outline: none; padding-left: 8px;}
+
+		.searchBar .searchIcon {height: 30px; width:30px; background: url('./images/pp_06.jpg') no-repeat ; float:left; margin-top: 2px; cursor: pointer;}
+		
+		.newsScroll {display: inline-block; margin-left:30px; line-height: 32px; width: 550px; overflow: hidden;}
+		#news {color: rgb(66, 59, 59); display: inline-block; position: relative;}
+
+		.brand {margin-top: 2px;}
+		.brand .brandBar {height:40px; line-height: 40px; background-color: #E9F2FA; font-size:16px; padding-left: 20px;}
+		.brandBar span {font-size: 16px;}
+		#brandNameSelected {color:#EF9025;}
+		.brand .brandList {width:175px; height:510px; float:left;}
+		.brandList dl {padding-left: 20px; color: #444;}
+		.brandList dt {font-size: 24px; margin: 14px 0 30px -2px;}
+		.brandList dd {font-size: 14px; margin-top:26px;}
+		dd.selectedBrand {color: rgb(249, 170, 108);}
+
+		.brand .brandDesc {width:725px; height:510px; float:left;}
+
+		.descTitle {height: 44px;}
+		#brandName {display:inline-block; float:left; font-size: 26px; margin:15px 0 0 5px; color: #444;}
+		#brandDetail {display: inline-block; float: right; margin: 20px 15px 0 0;}
+		#brandImg {width:725px; height:466px;}
+
+		.footer {height:120px; margin-top:40px; background-color: #F5F6FB;}
+		.footer .bottomImage {width:415px; float:left;}
+		.footer .copyRight {width:340px; margin:3px 0 0 15px; float: left;}
+		.copyRight img {width: 340px; margin-top: 15px;}
+		.footer .pageLink {width:120px; float: right; margin-top: 5px;}
+		.pageLink img {float: right; margin-top: 8px;}
+	</style>
+	
+</head>
+<body>
+	<div class="headerBackground">
+	</div>
+	
+	<div class="pageContent">
+		<header class="header">
+			<div class="top">
+				<a href="#">加入收藏</a> | <a href="#">设为首页</a>
+			</div>
+			<div class="logo">
+				<img class="logoImage" src="./images/logo.png">
+				<img class="contactImage" src="./images/l.png">
+			</div>
+			<div style="clear:both;"></div>
+		</header>
+
+		<div class="nav">
+			<ul>
+				<li class="selectedLi"><a href="#">关于我们</a></li>
+	            <li><a href="#">产品展示</a></li>
+	            <li><a href="#">新闻中心</a></li>
+	            <li><a href="#">工程管理</a></li>
+	            <li><a href="#">企业文化</a></li>
+	            <li><a href="#">在线留言</a></li>
+	            <li><a href="#">联系我们</a></li>
+			</ul>
+		</div>
+
+		<div class="bannerImage"></div>
+
+		<div class="searchBar">
+			<input type="text" class="search" value="请输入您要搜索的关键字" />
+			<span class="searchIcon"></span>
+			<span class="newsScroll">
+				<p id="news">最新动态</p>
+			</span>
+			<div style="clear:both;"></div>
+		</div>
+
+		<div class="brand">
+			<div class="brandBar">
+				<span>品牌</span> > <span id="brandNameSelected">奔驰</span>
+			</div>
+			<div class="brandList">
+				<dl>
+					<dt>品牌</dt>
+					<dd class="selectedBrand">奔驰</dd>
+					<dd>卡特</dd>
+					<dd>康明斯</dd>
+					<dd>科克系列</dd>
+					<dd>帕金斯</dd>
+					<dd>三菱</dd>
+					<dd>上柴</dd>
+					<dd>斯堪尼亚</dd>
+					<dd>威曼( vman )系列</dd>
+					<dd>沃尔沃发电机组</dd>
+					<dd>玉柴发电机组</dd>
+				</dl>
+			</div>
+			<div class="brandDesc">
+				<div class="descTitle">
+					<span id="brandName">奔驰</span>
+					<a id="brandDetail"><img src="./images/pp_10.jpg"></a>
+				</div>
+				<img id="brandImg" src="./images/pp_14.jpg" />
+			</div>
+			<div style="clear:both;"></div>
+		</div>
+
+		<footer class="footer">
+			<div class="bottomImage"><img src="./images/bottom.jpg" /></div>
+			<div class="copyRight">
+				<img src="./images/logo.png">
+				<img src="./images/pp_24.jpg">
+			</div>
+			<div class="pageLink">
+				<img src="./images/pp_22.jpg" />
+				<img src="./images/pp_26.jpg" />
+			</div>
+		</footer>
+	</div>
+
+	<script type="text/javascript">
+		$(function(){
+			// 导航栏切换效果
+			$(".nav li").click(function(){
+				$(".nav li").removeClass("selectedLi");
+				$(this).addClass("selectedLi");
+			});
+
+			// 搜索框
+			$("input.search").focus(function(){
+				if ( $(this).css("color") == "rgb(186, 186, 186)" ) {
+					$(this).val("");
+					$(this).css("color", "#222");
+				}
+			}).blur(function(){
+				var searchContent = $(this).val();
+				var flag = 0;
+				for (var i = 0; i < searchContent.length; i ++ ) {
+					if (searchContent[i] != " ") {
+						flag = 1;
+						break;
+					}
+				}
+				if (flag == 0) {
+					$(this).val("请输入您要搜索的关键字");
+					$(this).css("color", "#BABABA");
+				}
+
+			});
+			// 搜索按钮
+			$(".searchIcon").click(function(){
+				// get方式提交搜索请求
+
+			});
+
+			// 最新动态的滚动
+			var newsScrollWidth = parseFloat( $(".newsScroll").css("width") );
+			var newsWidth = parseFloat( $("#news").css("width") );
+			$("#news").css("left", -newsWidth);
+			var scrollX = newsScrollWidth + newsWidth;
+			var scrollTime = scrollX * 10;
+
+			var scrollNews = function() {
+				$("#news").animate({
+					left: newsScrollWidth,
+				}, {duration: scrollTime, complete: function(){
+					$(this).css("left", -newsWidth);
+					scrollNews();
+				}});
+			};
+			scrollNews();
+
+			// 品牌栏
+			$(".brandList dd").mouseover(function(){
+				$(this).css("text-decoration", "underline");
+			}).mouseout(function(){
+				$(this).css("text-decoration", "none");
+			}).click(function(){
+				$(".brandList dd").removeClass("selectedBrand");
+				$(this).addClass("selectedBrand");
+
+				$("#brandNameSelected").html(  $(this).html()   );
+			})
+		});
+	</script>
+</body>
+</html>
